@@ -1,0 +1,41 @@
+{
+  "name": "serverless-mongodb-local",
+  "version": "1.0.0",
+  "description": "Serverless plugin to start a local instance of mongodb",
+  "main": "src/serverless-mongodb-local.js",
+  "author": "Bailey Tincher <bailey.tincher@btin.io> (https://www.btin.io)",
+  "license": "MIT",
+  "keywords": [
+    "mongo",
+    "mongodb",
+    "local",
+    "database",
+    "serverless",
+    "nosql",
+    "aws"
+  ],
+  "scripts": {
+    "build": "webpack --mode production",
+    "commit": "npm run lint && git add . && git commit && git push",
+    "lint": "eslint --fix \"src/**/*.js*\" && prettier --write \"src/**/*.js*\""
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.7",
+    "@babel/preset-env": "^7.8.7",
+    "babel-loader": "^8.0.6",
+    "eslint": "^6.8.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-prettier": "^6.10.0",
+    "prettier": "^1.19.1",
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11"
+  },
+  "dependencies": {
+    "mongodb": "^3.5.4"
+  },
+  "peerDependencies": {
+    "serverless": "^1.66.0",
+    "serverless-offline": "^5.12.1"
+  }
+}
